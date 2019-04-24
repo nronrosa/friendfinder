@@ -27,7 +27,7 @@ module.exports = function (app) {
         // calc the diff of the user answsers minus the current fiend's answer (first loop)
         totalDiff = Math.abs(parseInt(userAnswers[j]) - parseInt(friends[i].answers[j]));
       }
-      // Checks 
+      // Checks lowest diff
       if (totalDiff <= bestMatch.pointDiff) {
         bestMatch.name = friends[i].name;
         bestMatch.photo = friends[i].photo;

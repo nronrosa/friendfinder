@@ -6,19 +6,28 @@
     background-image: url("../images/friendhands.jpg");
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
+    background-position: 45%;
 }
-
 
 .heading {
     font-family: 'Acme', sans-serif;
     text-align: center;
+    color: whitesmoke;
+}
+
+.subheading {
+    color: whitesmoke;
+}
+
+.alert-title {
+    color: red;
 }
 
 img {
-    /* width: 250px; */
     margin: 0px 10px 10px 0px;
     width: auto;
     height: 400px;
 }
+
