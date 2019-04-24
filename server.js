@@ -4,6 +4,7 @@
 // ==============================================================================
 
 var express = require("express");
+var path = require("path");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -12,6 +13,7 @@ var express = require("express");
 
 // Tells node that we are creating an "express" server
 var app = express();
+var path = require("path");
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 3000;
@@ -20,14 +22,15 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, "app/public/")));
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routes/apiRoutes")(app);
+require("./app/routes/htmlRoutes")(app);
 
 // =============================================================================
 // LISTENER

@@ -1,0 +1,24 @@
+.background {
+    background-image: url("../images/full-bloom.png");
+}
+
+.box {
+    background-image: url("../images/friendhands.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.heading {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+img {
+    /* width: 250px; */
+    margin: 0px 10px 10px 0px;
+    width: auto;
+    height: 400px;
+}
