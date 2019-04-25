@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>*Friend Finder*</title>
-
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -14,11 +12,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body class="background">
-
   <div class="container">
-
     <div class="jumbotron box">
       <h1 class="text-left fas fa-user-friends">
         <div class="heading">Friend Finder: Survey Questions</div>
@@ -26,7 +21,7 @@
       <hr>
       <br>
       <div class="text-center">
-
+      <!-- home button -->
         <a href="/">
           <button class="btn btn-lg btn-default">
             <span class="fa fa-home"></span>
@@ -47,13 +42,11 @@
                 <label for="survey-name">Name (Required)</label>
                 <input type="text" class="form-control" id="survey-name" placeholder="First and Last Name" required="">
                 <div class="valid-feedback">Looks good!</div>
-
                 <label for="survey-photo">Link to Photo Image (Required)</label>
                 <input type="text" class="form-control" id="survey-photo" placeholder="Photo Link" required="">
                 <div class="valid-feedback">Looks good!</div>
-
                 <hr>
-
+                <!-- begin questions -->
                 <div class="form-group">
                   <label for="survey-q1">
                     <strong>Question 1</strong> Your mind is always buzzing with unexplored ideas and plans.
@@ -67,7 +60,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q2">
                     <strong>Question 2</strong> Generally speaking, you rely more on your experience than your
@@ -82,7 +74,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q3">
                     <strong>Question 3</strong> You find it easy to stay relaxed and focused even when there is some
@@ -97,7 +88,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q4">
                     <strong>Question 4</strong> You rarely do something just out of sheer curiosity.
@@ -111,7 +101,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q5">
                     <strong>Question 5</strong> People can rarely upset you.
@@ -125,7 +114,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q6">
                     <strong>Question 6</strong> It is often difficult for you to relate to other people’s feelings.
@@ -139,7 +127,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q7">
                     <strong>Question 7</strong> In a discussion, truth should be more important than people’s
@@ -154,7 +141,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q8">
                     <strong>Question 8</strong> You rarely get carried away by fantasies and ideas.
@@ -168,7 +154,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q9">
                     <strong>Question 9</strong> You think that everyone’s views should be respected regardless of
@@ -184,7 +169,6 @@
                     <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="survey-q10">
                     <strong>Question 10</strong> You feel more energetic after spending time with a group of people.
@@ -205,7 +189,6 @@
         </div>
       </div>
     </div>
-
     <!-- Alert Modal -->
     <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel"
       aria-hidden="true">
@@ -227,7 +210,6 @@
         </div>
       </div>
     </div>
-
     <!-- Match Modal -->
     <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalCenterTitle"
       aria-hidden="true">
@@ -251,8 +233,6 @@
         </div>
       </div>
     </div>
-
-
     <footer class="footer">
       <div class="container">
         <p>
@@ -260,12 +240,8 @@
           <a href="https://github.com/nronrosa/friendfinder">API GitHub repo</a>
       </div>
     </footer>
-
-
 </body>
-
 </html>
-
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
 <script type="text/javascript">
   $(".submit").on("click", function (event) {
