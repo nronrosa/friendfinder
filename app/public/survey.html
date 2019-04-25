@@ -246,7 +246,7 @@
 <script type="text/javascript">
   $(".submit").on("click", function (event) {
     event.preventDefault();
-
+    // create var to validate and use for post
     var q1 = $("#q1").val()
     var q2 = $("#q2").val()
     var q3 = $("#q3").val()
@@ -257,7 +257,6 @@
     var q8 = $("#q8").val()
     var q9 = $("#q9").val()
     var q10 = $("#q10").val()
-
     // validate
     if ($("#survey-name").val() === "" || $("#survey-photo").val() === "" || q1 === "0" || q2 === "0" || q3 ===
       "0" || q4 === "0" || q5 === "0" || q6 === "0" || q7 === "0" || q8 === "0" || q9 === "0" || q10 === "0") {
@@ -270,12 +269,11 @@
         photo: $("#survey-photo").val().trim(),
         answers: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
       };
-
+      //  post to array
       $.post("/api/friends", newFriend, function (data) {
         // get match and update modal 
         $("#match-name").text(data.name);
         $("#match-img").attr("src", data.photo);
-
         $("#matchModal").modal("show");
         $("#alertModal").modal("hide");
       });
