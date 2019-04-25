@@ -28,7 +28,7 @@ This project uses Nodejs, JavaScript, HTML, CSS, JQuery, Express, JSON, NPM pack
 
 ### How to use
 To run application in your browser, first set the port environment.
-Type in terminal command line 'node' and server.js: ```node server.js```
+Type in terminal command line: ```node server.js```
 
 
 
